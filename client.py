@@ -4,6 +4,7 @@ def request_file(host='localhost', port=12345, filename='example.txt'):
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     client_socket.connect((host, port))
 
+
     client_socket.send(filename.encode())
 
     response = client_socket.recv(1024).decode()

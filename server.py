@@ -25,7 +25,6 @@ def start_server(host='0.0.0.0', port=12345):
             print(f"File {filename} sent to {address}")
         else:
             client_socket.send(b"File not found")
-
         client_socket.close()
 
 if __name__ == "__main__":
