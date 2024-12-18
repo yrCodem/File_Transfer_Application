@@ -1,6 +1,6 @@
 import socket
 
-def request_file(host='localhost', port=12345, filename='example.txt'): # Replace with your desired host and port
+def request_file(host='localhost', port=12345, filename='example.txt'):
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     client_socket.connect((host, port))
 
